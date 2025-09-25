@@ -19,11 +19,7 @@ terraform init
 terraform plan
 terraform apply
 
-### this automatically setup your instances for
-sonaqube
-jenkins
-prometheus
-grafana
+this automatically setup your instances for sonaqube, jenkins, prometheus and grafana
 
 ### The architectural diagram below illustrates a DevSecOps CI/CD infrastructure on AWS, enhanced with observability using Prometheus and Grafana. Here's a breakdown of each component and their interaction:
 
