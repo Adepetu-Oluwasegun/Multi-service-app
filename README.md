@@ -25,7 +25,7 @@ jenkins
 prometheus
 grafana
 
-### The architectural diagram above illustrates a DevSecOps CI/CD infrastructure on AWS, enhanced with observability using Prometheus and Grafana. Here's a breakdown of each component and their interaction:
+### The architectural diagram below illustrates a DevSecOps CI/CD infrastructure on AWS, enhanced with observability using Prometheus and Grafana. Here's a breakdown of each component and their interaction:
 
 ✅ Core Components & Flow
 🏗️ Terraform-Based Provisioning infrastructure (EC2 instances, VPC, subnets, security groups)
@@ -41,6 +41,7 @@ grafana
 📣 Notifications: Slack Integration is configured in Jenkins:
 ![CICD architecture ](architecture.png)
 ![microservice Architecture](architecture-1.png)
+
 ---
 ### Jenkins setup
 1) #### Access Jenkins
