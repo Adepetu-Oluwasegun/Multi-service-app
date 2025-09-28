@@ -155,7 +155,7 @@ Apply and save
       - Click on `Add Credentials`
       1)  ##### SonarQube secret token (SonarQube-Token)
           - ###### Generating SonarQube secret token:
-              - Login to your SonarQube Application (http://SonarServer-Sublic-IP:9000)
+              - Login to your SonarQube Application (http://SonarServer-Public-IP:9000)
                 - Default username: **`admin`** 
                 - Default password: **`admin`**
             - Click on `Login`
@@ -220,10 +220,10 @@ Apply and save
                 - Display key: `app-cart-service`
                 - Main branch name: `app-cart-service` 
               
-              - Click on `Projects` *(Create the `app-ad-serverice` microservice test project)*
-                - Project display name: `app-ad-serverice`
-                - Display key: `app-ad-serverice`
-                - Main branch name: `app-ad-serverice` 
+              - Click on `Projects` *(Create the `app-ad-service` microservice test project)*
+                - Project display name: `app-ad-service`
+                - Display key: `app-ad-service`
+                - Main branch name: `app-ad-service` 
               - Click on `Set Up`
 
             - Generate a `Global Analysis Token`    *This is the Token you need for Authorization*
@@ -253,7 +253,7 @@ Apply and save
 
       2)  ##### Slack secret token (slack-token)
           - ###### Get The Slack Token: 
-              - Slack: https://join.slack.com/t/jjtechtowerba-zuj7343/shared_invite/zt-24mgawshy-EhixQsRyVuCo8UD~AbhQYQ
+              - Slack: https://join.slack.com/t/multiservicea-od39604/shared_invite/zt-3emumq9gx-JfZMZm2GP8qKCZnVusSV7w
               - Navigate to the Slack "Channel you created": `YOUR_INITIAL-devsecops-cicd-alerts`
               - Click on your `Channel Drop Down`
               - Click on `Integrations` and Click on `Add an App`
@@ -301,7 +301,6 @@ Apply and save
                 - You can use your `Notepad` or any other `Text Editor` as well
                 - Open your Local `GitBash` or `Terminal`
                 - Create a File Locally
-                - RUN: `rm ~/Downloads/kubeconfig-secret.txt`
                 - RUN: `touch ~/Downloads/kubeconfig-secret.txt`
                 - RUN: `vi ~/Downloads/kubeconfig-secret.txt`
                 - `PASTE` and `SAVE` the KubeConfig content in the file
@@ -313,7 +312,7 @@ Apply and save
                 - Click `Global credentials (unrestricted)`
             - Kind: `Secret File`          
             - File: Click ``Choose File``
-                - **NOTE:** *Seletct the KubeConfig file you saved locally*
+                - **NOTE:** *Select the KubeConfig file you saved locally*
             - ID: ``Kubernetes-Credential``
             - Description: `Kubernetes-Credential`
             - Click on `Create`  
@@ -331,7 +330,7 @@ Apply and save
             
       5) ##### Create the ZAP Dynamic Application Security Testing Server Credential
          - ###### Start by Copy the `EC2 SSH Private Key File Content` of your `Jenkins-CI` Server
-            - Open your `GitBash Terminal` or `MacOS Terminal` 
+            - Open `Git-Bash Terminal` or `MacOS Terminal` 
             - Navigate to the Location where your `Jenkins-CI` Server SSH Key is Stored *(Usually in **Downloads**)*
             - Run the Command `cat /Your_Key_PATH/YOUR_SSH_KEY_FILE_NAME.pem`
               - `Note:` Your `.pem` private key will most like be in `Downloads`
