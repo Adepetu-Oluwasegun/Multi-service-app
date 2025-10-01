@@ -333,7 +333,7 @@ Apply and save
             - COPY the KEY content and Navigate back to Jenkins to store it...
         
          - ###### Create The ZAP Server SSH Key Credential in Jenkins
-            - Navigate to the `Jenkins Global Credential Dash`
+            - Navigate to the `Jenkins Global Credential Dashboard`
             - Click on `Create Credentials`
             - Scope: Select `Global......`
             - Type: Select `SSH Username with Private Key`
@@ -385,7 +385,7 @@ Apply and save
 4) ### 🛠 Step 1: Configure Prometheus to Scrape Metrics
 
 Update the prometheus.yml config file on the Prometheus EC2 instance:
-### path /etc/prometheus/prometheus.yml
+### path sudo nano /etc/prometheus/prometheus.yml
 scrape_configs:
   - job_name: 'jenkins'
     metrics_path: /prometheus

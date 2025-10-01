@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('eks deployment repo'){
             steps{
-                git branch: 'main', url: 'https://github.com/Dappyplay4u/microservice-cicd.git'
+                git branch: 'main', url: 'https://github.com/Adepetu-Oluwasegun/Multi-service-app.git'
             }
         }
         stage('Terraform Init') {
